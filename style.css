@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+h1 {
+    width: 100vw;
+    text-align: center;
+}
+
+.slide {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    background-color: black;
+}
+
+.container {
+    height: 100vw;
+    width: 100vh;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.container::-webkit-scrollbar {
+    display: none;
+  }
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200vw;
+    background-position: bottom;
+    background-size: cover;
+    background-color:beige;
+    display: flex;
+
+}
+
+.page {
+    width: 110vw;
+    height: 100vh;
+}
+
+.page1 {
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.page2 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.page3 {
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: row;
+}
+.page4 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.page5 {
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: row;
+}
+.box-img-porte {
+    height: 80%;
+    width: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.page1 p {
+    font-family: 'Okine Sans Thin';
+    font-size: 2vw;
+}
+.page1 h1 {
+    font-family: 'LEMONMILK Light';
+    font-size: 8vw;
+}
+
+
+
+.img-porte {
+    height: 100%;
+    margin-left: 0;
+}
+
+.blanc {
+    color: white;
+}
+.noir {
+    color: black;
+}
+
+.titre {
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: 'LEMONMILK Light';
+    text-align: left;
+    margin-bottom: 5%;
+}
+.txt {
+    font-size: 1.4vw;
+    line-height: 180%;
+    font-family: 'Okine Sans Thin';
+}
+.box-txt-page {
+    width: 50%;
+    margin: auto 0 auto 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'LEMONMILK Light';
+    src: url(./typos/LEMONMILK-Light.otf);
+}
+@font-face {
+    font-family: 'Okine Sans Thin';
+    src: url(./typos/MADEOkineSansPERSONALUSE-Thin.otf);
+}
+
